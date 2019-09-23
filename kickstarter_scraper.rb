@@ -27,7 +27,7 @@ def create_project_hash
     }
   }
 
-  p projects
+  projects
 end
 
 create_project_hash
