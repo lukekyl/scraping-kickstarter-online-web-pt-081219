@@ -23,7 +23,6 @@ def create_project_hash
   }
 
   project
-
 end
 
 create_project_hash
