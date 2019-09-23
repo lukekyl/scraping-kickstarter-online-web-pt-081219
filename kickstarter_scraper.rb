@@ -19,7 +19,7 @@ def create_project_hash
 
   kickstarter.css("liprojects.grid_4").each { |project|
     title = project.css("h2.bbcard_name strong a").text
-    pprojects[title.to_sym] ={}
+    p projects[title.to_sym] ={}
   }
 
   projects
