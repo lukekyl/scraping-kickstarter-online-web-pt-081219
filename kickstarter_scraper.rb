@@ -18,8 +18,8 @@ def create_project_hash
   # percent funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%", "").to_i
 
   kickstarter.css("liprojects.grid_4").each { |project|
-
-    projects[project] ={}
+    title = project.css("h2.bbcard_name strong a").text
+    projects[title.to_sym] ={}
   }
 
   projects
